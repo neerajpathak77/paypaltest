@@ -11,7 +11,7 @@ const PayPalSdkExample = () => {
                       purchase_units: [
                           {
                               amount: {
-                                  value: "1.63",
+                                  value: "1.21",
                               },
                           },
                       ],
