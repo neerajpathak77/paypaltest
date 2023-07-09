@@ -1,13 +1,8 @@
 import "dotenv/config";
 import express from "express";
-import ejs from "ejs";
 import * as paypal from "./paypal.js";
-import { getpaypalHtml } from "./tempHtmlWothoutTemplating.js";
-
 
 const { PORT = 8888, CLIENT_ID: clientId } = process.env;
-
-
 const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
